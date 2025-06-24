@@ -1,0 +1,102 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+
+  thead {
+    tr {
+      td {
+        padding: 12px 16px;
+        text-align: left;
+        font-weight: normal;
+        border-bottom: 1px solid #333;
+        color: #a0a0a0;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #2a2a2a;
+
+      //colors may change
+      &:nth-child(odd) {
+        background-color: #1a1a1a;
+      }
+
+      &:nth-child(even) {
+        background-color: #121212;
+      }
+
+      td {
+        padding: 16px;
+        vertical-align: middle;
+
+        //change
+        &:first-child {
+          color: #4caf50;
+        }
+
+        //change
+        &:nth-child(3) {
+          color: #4285f4;
+        }
+
+        //change this code
+        &:last-child {
+          &[data-difficulty="HARD"] {
+            color: #ff375f;
+          }
+
+          &[data-difficulty="MID"] {
+            color: #ffc01e;
+          }
+
+          &[data-difficulty="EASY"] {
+            color: #00b8a3;
+          }
+        }
+      }
+    }
+  }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: auto;
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 30px;
+  line-height: 1.2em;
+  height: 1.2em;
+  overflow: hidden;
+}
+.loader:before {
+  content: "Loading...\A⌰oading...\A⌰⍜ading...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔";
+  white-space: pre;
+  display: inline-block;
+  animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.errorContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  width: 40%;
+  padding: 1rem;
+  background-color: transparent;
+}

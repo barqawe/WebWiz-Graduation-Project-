@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  gap: 0.5rem;
+  
+  span {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+  
+  img {
+    transition: transform 0.4s ease;
+    object-fit: contain;
+
+    &:hover {
+      animation: hatAnimation 1s ease-in-out;
+    }
+  }
+}
+
+@keyframes hatAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1);
+  }
+  75% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

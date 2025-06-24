@@ -1,0 +1,134 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .grade {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .totalScore {
+    font-size: 1.2rem;
+    color: #666;
+  }
+}
+
+.scoreSection {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.scoreCard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2196F3;
+    margin-bottom: 0.5rem;
+  }
+
+  .outOf {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .commentary {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+.issuesSection {
+  background: #fff3f3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issueCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ff4444;
+
+  h4 {
+    color: #ff4444;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  .recommendation {
+    color: #666;
+    font-style: italic;
+  }
+}
+
+.recommendation {
+  background: #e8f5e9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+} 

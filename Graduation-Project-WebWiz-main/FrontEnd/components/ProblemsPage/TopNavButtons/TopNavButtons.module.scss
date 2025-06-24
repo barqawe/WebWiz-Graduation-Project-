@@ -1,0 +1,46 @@
+.topNavButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #1a2a3a;
+    transition: background-color 0.6s ease, color 0.6s ease;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  .selected {
+    &[data-type="ALL"] {
+      background-color: #cc8899;
+      color: #1a2a3a;
+    }
+    &[data-type="HTML"] {
+      background-color: #ff5733;
+      color: #1a2a3a;
+    }
+    &[data-type="CSS"] {
+      background-color: #264de4;
+      color: #1a2a3a;
+    }
+    &[data-type="JS"] {
+      background-color: #f7df1e;
+      color: #1a2a3a;
+    }
+    &[data-type="REACT"] {
+      background-color: #61dbfb;
+      color: #1a2a3a;
+    }
+  }
+}

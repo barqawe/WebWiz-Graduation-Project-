@@ -1,0 +1,591 @@
+[
+  {
+    "ContainingType": "WhateverEnd.Controllers.GithubAuthController",
+    "Method": "GithubAuthenticate",
+    "RelativePath": "api/auth/Github",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "App.Dto_s.LearnerAuthDto.ExternalLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.TokenResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.GoogleAuthController",
+    "Method": "GoogleAuthenticate",
+    "RelativePath": "api/auth/google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "App.Dto_s.LearnerAuthDto.ExternalLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.TokenResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "GetLeaderBoard",
+    "RelativePath": "api/Auth/leader-board",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.Entities.Progress, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Dto_s.LearnerAuthDto.LoginLearnerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.TokenResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "GetProfilePicture",
+    "RelativePath": "api/Auth/profile-picture/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.ProfilePictureDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Auth/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Dto_s.LearnerAuthDto.RefreshTokenRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.TokenResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Dto_s.LearnerAuthDto.LearnerReqDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.LearnerAuthDto.LearnerResDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "SendResetCode",
+    "RelativePath": "api/Auth/send-reset-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sendRestNumberDto",
+        "Type": "App.Dto_s.LearnerAuthDto.SendRestNumberDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Auth/update-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "App.Dto_s.LearnerAuthDto.UpdatePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "UploadProfilePicture",
+    "RelativePath": "api/Auth/upload-profile-picture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.AuthController",
+    "Method": "VildateRestCode",
+    "RelativePath": "api/Auth/validate-reset-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ResetCode",
+        "Type": "App.Dto_s.LearnerAuthDto.ValidateResetCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "CreateTaskAsync",
+    "RelativePath": "api/Design-Task/CreateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Level",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Programming_Language",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Designs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "HTML",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CSS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "React",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "App.Dto_s.DesignTaskDtoRes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "DeleteTaskByIdAsync",
+    "RelativePath": "api/Design-Task/DeleteTask",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "GetAllTasksCount",
+    "RelativePath": "api/Design-Task/GetAllTasksCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Domain.Entities.DesignTask, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "GetExternalEvaluationAsync",
+    "RelativePath": "api/Design-Task/GetExternalEvaluationAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "HTML",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CSS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JSX",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubmittedImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "GetFilteredTasksAsync",
+    "RelativePath": "api/Design-Task/GetFilteredTasks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskFilter",
+        "Type": "App.Dto_s.TaskFilterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[App.Dto_s.DesignTaskDtoRes, App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "GetTaskByIdAsync",
+    "RelativePath": "api/Design-Task/GetTaskById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.Entities.DesignTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "GetTasksByInstructorIdAsync",
+    "RelativePath": "api/Design-Task/GetTasksByInstructorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[App.Dto_s.DesignTaskDtoRes, App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.DesignTaskController",
+    "Method": "UpdateTaskAsync",
+    "RelativePath": "api/Design-Task/UpdateTask/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "task",
+        "Type": "App.Dto_s.DesignTaskDtoReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.Entities.DesignTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WhateverEnd.Controllers.ProgressController",
+    "Method": "GetProgressById",
+    "RelativePath": "api/Progress/Progress",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.Entities.Progress",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.RoadmapsController",
+    "Method": "GetAllRoadmaps",
+    "RelativePath": "api/Roadmaps",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.RoadmapsController",
+    "Method": "GetRoadmap",
+    "RelativePath": "api/Roadmaps/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.RoadmapsController",
+    "Method": "GetRoadmapWithProgressAlternative",
+    "RelativePath": "api/Roadmaps/{id}/progress/{learnerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "learnerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.RoadmapsController",
+    "Method": "GetAllRoadmapsWithProgress",
+    "RelativePath": "api/Roadmaps/progress/{learnerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "learnerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

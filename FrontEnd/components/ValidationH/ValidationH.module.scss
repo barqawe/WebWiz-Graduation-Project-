@@ -1,0 +1,134 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.scoreSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.scoreCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.scoreValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.scoreOutOf {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.commentary {
+  color: #34495e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.issuesSection {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff3cd;
+  border-radius: 8px;
+}
+
+.issueCard {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #ffc107;
+
+  h4 {
+    color: #856404;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #666;
+    margin: 0.5rem 0;
+  }
+}
+
+.recommendation {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #d4edda;
+  border-radius: 8px;
+  color: #155724;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+.totalScore {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #e3f2fd;
+  border-radius: 8px;
+
+  h2 {
+    color: #1976d2;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .grade {
+    font-size: 1.5rem;
+    color: #2196f3;
+    font-weight: bold;
+  }
+} 

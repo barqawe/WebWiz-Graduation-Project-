@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "WhateverEnd\\WhateverEnd.sln",
+    "projects": [
+      "..\\App\\App.csproj",
+      "..\\Domain\\Domain.csproj",
+      "..\\Infrastructure\\Infrastructure.csproj",
+      "WhateverEnd.csproj"
+    ]
+  }
+}

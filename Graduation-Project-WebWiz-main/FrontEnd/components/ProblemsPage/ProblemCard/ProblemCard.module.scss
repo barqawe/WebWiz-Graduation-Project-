@@ -1,0 +1,153 @@
+// TaskCard.module.scss
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+
+  /* background: var(--secondary-bg); */
+  background: var(--primary-bg-2);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.imageContainer {
+  /*  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%; // 16:9 aspect ratio
+  } */
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio for all images */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* This makes the content area expand to fill available space */
+  padding: 1.5rem;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.technologiesBar {
+  margin-top: auto; /* Push the tech badges to the bottom */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  @media (max-width: 420px) {
+    gap: 8px;
+  }
+}
+
+//to be changed
+.technology {
+  color: #4ecca3;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+
+  &:nth-child(2) {
+    color: #a6b1e1;
+  }
+
+  &:nth-child(3) {
+    color: #f9a826;
+  }
+
+  &:nth-child(4) {
+    color: #5da0f7;
+  }
+
+  &:nth-child(5) {
+    color: #fc5c65;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
+}
+
+.levelContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e03939;
+  padding: 2px 12px;
+  border-radius: 20px;
+}
+
+.levelNumber {
+  font-weight: bold;
+  color: #fff;
+}
+
+.levelLabel {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+
+  @media (max-width: 420px) {
+    font-size: 10px;
+  }
+}
+
+.description {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+
+  /*limit description to exact number of lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show exactly 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+
+
+.card-bg-gradient {
+  background: var(--primary-bg-2);
+}
